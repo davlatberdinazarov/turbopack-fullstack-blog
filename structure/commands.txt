@@ -1,0 +1,10 @@
+ npm i @nestjs/jwt 
+ npm i argon2   
+ nest g res auth --no-spec 
+ npx prisma studio        
+ npm i @nestjs/config
+ openssl rand -hex 32  (bash) 
+ npm i passport passport-jwt  
+ npm i @nestjs/passport 
+ nest g gu auth/guards/jwt-auth 
+ npx shadcn@latest init

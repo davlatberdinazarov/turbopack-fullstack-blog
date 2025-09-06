@@ -1,6 +1,9 @@
 import { fetchPostById } from "@/lib/actions/postActions";
 import Image from "next/image";
 import SanitizedContent from "./_components/SanitizedContent";
+import Comments from "./_components/comments";
+import { getSession } from "@/lib/session";
+import Like from "./_components/like";
 // import DOMPurify from "dompurify";
 // import Comments from "./_components/comments";
 // import { getSession } from "@/lib/session";
@@ -14,7 +17,7 @@ type Props = {
 const PostPage = async ({ params }: Props) => {
   const postId = (await params).id;
   const post = await fetchPostById(+postId);
-//   const session = await getSession();
+  const session = await getSession();
 
   return (
     <main className="container mx-auto px-4 py-8 mt-16">
@@ -33,11 +36,10 @@ const PostPage = async ({ params }: Props) => {
       </div>
 
       <SanitizedContent content={post.content} />
-{/* 
+
       <Like postId={post.id} user={session?.user} />
       <Comments user={session?.user} postId={post.id} /> 
-      
-*/}
+
     </main>
   );
 };

@@ -8,3 +8,5 @@
  npm i @nestjs/passport 
  nest g gu auth/guards/jwt-auth 
  npx shadcn@latest init
+ npm i passport-google-oauth20
+ npm i -D @types/passport-google-oauth20

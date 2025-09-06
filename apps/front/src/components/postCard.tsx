@@ -15,8 +15,8 @@ const PostCard = ({
     <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       <div className="relative h-60 w-full">
         <Image
-        //   src={thumbnail ?? "/no-image.png"}
-          src={"https://plus.unsplash.com/premium_photo-1756224672428-905c9d7c10e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"}
+          src={thumbnail ?? "/no-image.png"}
+          // src={"https://plus.unsplash.com/premium_photo-1756224672428-905c9d7c10e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D"}
           alt={title ?? "Post thumbnail"}
           fill
           className="object-cover"

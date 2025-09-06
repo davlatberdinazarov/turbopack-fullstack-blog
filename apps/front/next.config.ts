@@ -17,15 +17,14 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "plus.unsplash.com", // ✅ unsplash premium rasm uchun
+        hostname: "images.unsplash.com", // ✅ oddiy unsplash rasmlar uchun
         port: "",
         pathname: "/**",
       },
       {
         protocol: "https",
-        hostname: "images.unsplash.com", // ✅ oddiy unsplash rasmlar uchun
-        port: "",
-        pathname: "/**",
+        hostname: "tfkhvbwaelfwjfjtozyw.supabase.co",
+        pathname: "/storage/v1/object/public/**",
       },
     ],
   },
